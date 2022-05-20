@@ -9,8 +9,8 @@ function enviar(){
         nome = nome.filter(x => x!== sorteado)
         time.push(sorteado)
    }
-   let time1 = time.slice(0,5)
-   let time2 = time.slice(5,10)
+   let time1 = time.slice(0,quantidade)
+   let time2 = time.slice(quantidade,quantidade*2)
     
     document.getElementById("valor").value = `TIME 1: ${time1}\nTIME 2: ${time2}`;
 }
