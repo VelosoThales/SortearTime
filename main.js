@@ -2,7 +2,8 @@ function enviar(){
     let nome = document.getElementById("nome").value;
     nome = nome.split(",");
     let time = []
-    for(let i=0;i<10;i++){
+    let quantidade = document.getElementById("qtd").value;
+    for(let i=0;i<quantidade*2;i++){
         numeroSorteado = Math.floor(Math.random()*nome.length);
         let sorteado = nome[numeroSorteado];
         nome = nome.filter(x => x!== sorteado)
